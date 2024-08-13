@@ -1,0 +1,16 @@
+@font-face {
+    font-family: AlexBrush ;
+    src: url(../fonts/Alex_Brush/AlexBrush.ttf);
+}
+@font-face {
+    font-family: PoppinsLight ;
+    src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: PoppinsRegular ;
+    src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: PoppinsSemiBold ;
+    src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}

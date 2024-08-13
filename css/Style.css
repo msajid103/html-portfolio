@@ -1,0 +1,601 @@
+@import url(../css/fonts.css);
+
+
+:root {
+    --blue: rgba(60, 29, 255, 1);
+    --bg: linear-gradient(to top, rgba(60, 29, 255, 1), rgba(21, 185, 185, 1));
+    /*      theme font-family   */
+    --Alex: 'AlexBrush', cursive;
+    --PoppinsRe: 'PoppinsRegular', cursive;
+    --PoppinsSemiBold: 'PoppinsSemiBold', cursive;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    background: #1f1f1f;
+    color: #fff;
+}
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-family: var(--PoppinsSemiBold);
+}
+
+ul li {
+    list-style: none;
+}
+
+/* _______________________ Global Classes______________________  */
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    background: var(--bg);
+    border-radius: 6px;
+    padding: 1rem 4rem;
+    font-size: 1.6rem;
+    font-family: var(--PoppinsRe);
+}
+
+.btn-primary{
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+}
+
+/* ___________x___________ Global Classes___________x__________  */
+
+/* ______________________ header_____________________  */
+
+.nav-bar {
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.nav-bar .logo a {
+
+    font-size: 2.5rem;
+    font-family: var(--Alex);
+    padding: 0 3rem;
+    color: rgba(21, 185, 185, 1);
+}
+
+.nav-links {
+    width: 50%;
+}
+
+.nav-links ul li {
+    font-size: 1.7rem;
+    font-family: var(--PoppinsRe);
+}
+
+/* ___________x___________ header ___________x__________  */
+/* _______________________ Home section ______________________  */
+
+.container {
+    justify-content: flex-start;
+}
+
+.container .media-links {
+    margin: 0 2rem;
+    padding: 0 2rem;
+    width: 13%;
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.container .media-links a {
+    padding: 1.5rem 0;
+}
+
+.container .content {
+    width: 45%;
+}
+
+.container .content p {
+    font-family: var(--PoppinsRe);
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+.container .content h1 {
+    font-family: var(--PoppinsSemiBold);
+    font-size: 3.5rem;
+}
+
+/* ___________x___________ Home section __________x___________  */
+/* _______________________ About section ______________________  */
+.about {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 5rem 15rem;
+
+}
+
+.about .img-container {
+    position: relative;
+    width: 25%;
+    height: 430px;
+    /* border: 2px solid red; */
+    background: #292929;
+    box-shadow: -6px -6px 10px -100px rgba(255, 0, 0, .8), 6px 6px 20px -1px rgba(255, 0, 0, .8);
+
+
+
+
+}
+
+.about .img-container .img {
+    position: absolute;
+    top: 8%;
+    left: 8%;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    overflow: hidden;
+    box-shadow: 6px 6px 20px -1px rgba(80, 16, 229, 0.5), -6px -6px 20px -1px rgba(80, 16, 229, 0.5);
+
+
+}
+
+.about .img-container .img img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .content {
+    width: 50%;
+    margin: 10rem 6rem 0;
+
+}
+
+.about .content h1 {
+    font-size: 2.5rem;
+    font-family: var(--PoppinsSemiBold);
+    margin-bottom: 1rem;
+}
+
+.about .content p {
+    font-size: 1.6rem;
+    font-family: var(--PoppinsRe);
+}
+
+/* ___________x___________ About section _________x____________  */
+
+/* _______________________ Skills ______________________  */
+.skill-main {
+    padding: 10rem 8rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+
+}
+
+.skills-container {
+    width: 50%;
+
+
+}
+
+.skills-container h1 {
+    border-bottom: 2px solid white;
+    margin: 0 0 3rem 5rem;
+    font-family: var(--PoppinsSemiBold);
+    font-size: 3rem;
+    display: inline-block;
+
+}
+
+.skills-circle {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.skill {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    margin: 5rem 1rem;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(80, 16, 229, 0.5), -6px -6px 10px -1px rgba(58, 49, 49, 0.1);
+    background: conic-gradient(blue 260deg, #1f1f1f 260deg)
+}
+
+.skill-1 {
+    background: conic-gradient(blue 300deg, #1f1f1f 300deg)
+}
+
+.skill-3 {
+    background: conic-gradient(blue 160deg, #1f1f1f 160deg)
+}
+
+.inner {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(94, 93, 93, 0.1), inset -4px -4px 6px -1px rgba(58, 49, 49, 0.1),
+        -.4px -.4px 0px rgba(94, 93, 93, 0.2),
+        .5px .5px 0px rgba(94, 93, 93, 0.3),
+        0px 12px 10px -10px rgba(94, 93, 93, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inner .number {
+    font-family: var(--PoppinsSemiBold);
+    font-size: 2rem;
+
+}
+
+.skill .content {
+    font-size: 1.6rem;
+    position: relative;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--PoppinsSemiBold);
+}
+
+/* ___________x___________ Skills _________x____________  */
+
+/* __________________________ languages ____________________ */
+.languages {
+    height: 100%;
+    width: 40%;
+    border-left: 2px solid white;
+    margin-left: 2rem;
+    padding: 0 0 3rem 5rem;
+}
+
+.languages h1 {
+    margin: 0 0 5rem 0;
+    border-bottom: 2px solid white;
+    font-family: var(--PoppinsSemiBold);
+    font-size: 3rem;
+    display: inline;
+}
+
+.languages .language {
+    margin: 3rem 0;
+}
+
+.languages .language .bar {
+    background: white;
+    margin: 2rem 0;
+    border-radius: 20px;
+    width: 80%;
+    height: 20px;
+}
+
+.languages .language .bar div {
+    background: var(--bg);
+    border-radius: 20px;
+    width: 97%;
+    height: 100%;
+}
+
+.languages .language-1 .bar div {
+    width: 70%;
+}
+
+.languages .language .content {
+    display: flex;
+    gap: 58%;
+    font-family: var(--PoppinsSemiBold);
+    font-size: 1.6rem;
+}
+
+/* _____________x__________ languages ___________x_____________ */
+
+
+/* ___________________________ services ________________________ */
+.services {
+    text-align: center;
+}
+.services h1 {
+    
+    font-size: 3rem;
+    font-family: var(--PoppinsSemiBold);
+    margin: 1rem 0;
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+.services .head {
+
+    position: relative;
+    display: flex;
+    padding: 80px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 80px;
+    text-align: center;
+
+
+}
+
+.card {
+
+    position: relative;
+    width: 350px;
+    height: 180px;
+    background: #333;
+    transition: 0.5s;
+
+}
+
+.card:hover {
+    height: 450px;
+
+}
+
+.card .lines {
+    position: absolute;
+    inset: 0;
+    background: #000;
+    overflow: hidden;
+}
+
+.card .lines::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 220px;
+    background: linear-gradient(transparent, rgba(60, 29, 255, 1), rgba(60, 29, 255, 1), transparent);
+    animation: animate 4s linear infinite;
+    animation-play-state: paused;
+}
+
+.card:hover .lines::before {
+    animation-play-state: running;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.card .lines::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+
+.card .img-bx {
+    background: #000;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: -60Px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+    z-index: 10;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .img-bx {
+    top: 25px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.card .img-bx::before {
+    content: '';
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(transparent, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1), transparent);
+    animation: animate2 6s linear infinite;
+    animation-play-state: paused;
+
+}
+
+.card:hover .img-bx::before {
+    animation-play-state: running;
+}
+
+@keyframes animate2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+.card .img-bx::after {
+    content: '';
+    position: absolute;
+    inset: 3px;
+    background: #292929;
+}
+
+.card .img-bx img {
+    width: 93%;
+    height: 93%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.card:hover .img-bx img {
+    opacity: 10;
+}
+
+.card .content {
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: transparent;
+    overflow: hidden;
+}
+
+.card .content .details {
+    padding: 30px 20px;
+    background: transparent;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+
+}
+
+.card .content .details h2 {
+    font-size: 2.5rem;
+    font-family: var(--PoppinsSemiBold);
+    background: transparent;
+
+}
+
+.card .content .details p {
+    font-size: 1.6rem;
+    font-family: var(--PoppinsRe);
+    background: transparent;
+    margin: 0 0 1.5rem 0;
+
+
+}
+
+.card:hover .content .details {
+    transform: translateY(-20px);
+
+}
+
+.card:hover .content .details .btn {
+    padding: .5rem 1rem;
+}
+
+/* _____________x_____________ services ____________x___________ */
+
+
+/* __________________________ Projects _______________________ */
+
+#gallery {
+    text-align: center;
+}
+
+#gallery h1 {
+    border-bottom: 2px solid white;
+    display: inline-block;
+}
+
+#gallery .images-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+
+}
+#gallery .images-container .image{
+    padding: 2rem;
+    border: 2px solid white;
+    background: #ccc;
+    margin: 2rem;
+    width: 100%;
+}
+#gallery .images-container .image .img-box img {
+    width: 30%;
+    height: 30%;
+}
+
+#gallery .images-container .image .img-content h3 {
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+/* _____________x_____________ Projects ____________x___________ */
+
+
+/* _____________________________ contact ___________________________ */
+.contact-container {
+    max-width: 90%;
+    margin: 4rem auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ccc;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 2.5rem;
+    font-family: var(--PoppinsSemiBold);
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 2.5rem;
+}
+textarea {
+    resize: vertical;
+    height: 150px;
+
+}
+button[type="submit"] {
+   padding: 2rem 5rem;
+   font-size: 2.5rem;
+}
+/* _______________x_____________ contact _______________x___________ */
